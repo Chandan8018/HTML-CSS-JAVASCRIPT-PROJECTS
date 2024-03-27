@@ -1,0 +1,210 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-div1 {
+  background: linear-gradient(90deg,
+        rgb(132, 50, 226) 0%,
+        rgb(23, 188, 221) 100%);
+  display: flex;
+  align-items: center;
+  height: 5vw;
+  gap: 2vw;
+}
+
+.logo-div {
+  width: 5vw;
+  height: 5vw;
+}
+
+img {
+  width: 6vw;
+  height: 6vw;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.header-icon {
+  position: absolute;
+  right: 6vh;
+}
+
+.loc-div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-icon i {
+  margin-right: 2vw;
+  color: white;
+  font-size: 2.5vw;
+}
+.header-icon .user-icon{
+  color: rgb(15, 15, 109);
+}
+.header-icon i:hover,
+.loc-div i:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.loc-div i {
+  color: white;
+  font-size: 2.5vw;
+}
+
+.loc-div h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.search-div {
+  display: flex;
+  align-items: center;
+  margin-left: 10vw;
+ 
+}
+
+.search-div input {
+  height: 3vw;
+  width: 29vw;
+  font-size: 2.3vw;
+  outline: none;
+  border: none;
+  border-radius: 2vw;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.search-div i {
+  border: none;
+  color: rgb(13, 1, 1);
+  background-color: rgb(60, 186, 228);
+  /* border-color: white; */
+  outline: none;
+  font-size: 2.5vw;
+  height: 3vw;
+  width: 4.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vw;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.search-div i:hover {
+  color: rgb(231, 236, 231);
+  cursor: pointer;
+}
+
+.search-div input:hover {
+  cursor: pointer;
+}
+
+/* Styleing for header div 2 */
+.header-div2 {
+  width: 100%;
+  height: 2vw;
+  background: linear-gradient(90deg,
+      rgb(132, 50, 226) 0%,
+      rgb(23, 188, 221) 100%);
+}
+
+.header-div2 ul {
+  height: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4vw;
+}
+
+ul a:hover {
+  font-weight: 900;
+  color: rgb(40, 36, 30);
+}
+
+
+/* login box */
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(90deg,
+        rgb(132, 50, 226) 0%,
+        rgb(23, 188, 221) 100%);
+  width: 100%;
+  height: 430px;
+  margin-top: -35px;
+  
+}
+
+.login-icon{
+   height: 100px;
+   width: 100px;
+   background-color: rgb(15, 15, 109);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   border-radius: 50%;
+   z-index: 2;
+   position: relative;
+   top: 30px;
+}
+.login-icon i{
+  font-size: 50px;
+  color: white;
+}
+.login-contanier{
+  z-index: 1;
+  position: relative;
+  top: -20px;
+  background-color: rgb(179, 187, 221);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.sinin-btn{
+  background-color: rgb(15, 15, 109);
+  width: 200px;
+  height: 30px;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  position: relative;
+  top: 25px;
+  border-radius: 5px;
+}
+.label{
+  font-size: 12px;
+}
+.check{
+  display: flex;
+  gap: 20px;
+}
+.check1 {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+}

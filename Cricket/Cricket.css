@@ -1,0 +1,55 @@
+.btn{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(185, 243, 224);
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+}
+.img{
+   height: 200px;
+   width: 150px;
+}
+.reset-btn{
+    height: 100px;
+    width: 200px;
+    border: none;
+    background-color: rgb(185, 243, 224);
+    cursor: pointer;
+}
+.img1{
+    height: 100px;
+    width: 200px;
+}
+body{
+    text-align: center; 
+    background-color: rgb(185, 243, 224);
+    margin: 0;
+    /*overflow: hidden; Hide vertical overflow */
+}
+
+.scrolling-text-container {
+    margin-left: 470px;
+    width: 40%;
+    overflow: hidden;
+}
+
+.scrolling-text {
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: scrollText 20s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(100%); /* Start offscreen to the right */
+    }
+    to {
+        transform: translateX(-100%); /* Move text to the left */
+    }
+}
+b{
+    color: red;
+}
+h1{
+    color: blue;
+}

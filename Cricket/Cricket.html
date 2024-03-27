@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="Cricket.css">
+</head>
+<body>
+    <h1 id="h1">&#127881;Welcom to Game World!!&#127881;</h1>
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+            <h3><b>Rules and Regulations :</b> If compare (Bat :: Ball) : Bat || (Ball :: Stump) : Ball || (Stump :: Bat) : Stump !!!  </h3>
+        </div>
+    </div>
+    <h1>Bat &#x1F3CF;, Ball &#127936;, and Stump&#124;&#124;&#124; Game.</h1>
+    <div>
+        <!-- For bat button. -->
+
+        <button class="btn" onclick="
+        let computerChoose = generatorComputerChoose();
+        let result = resultMsg('Bat', computerChoose);
+        finalResult('Bat &#x1F3CF;', computerChoose,result);
+        "><img class="img" src="bat1.png" alt="bat"></button>
+
+        <!-- For ball button. -->
+
+        <button class="btn" onclick="
+        computerChoose = generatorComputerChoose();
+        result = resultMsg('Ball', computerChoose);
+        finalResult('Ball &#127936;', computerChoose,result);
+        "><img class="img" src="ball.png" alt="ball"></button>
+
+        <!-- For Stump button. -->
+
+        <button class="btn" onclick="
+        computerChoose = generatorComputerChoose();
+        result = resultMsg('Stump', computerChoose);
+        finalResult('Stump &#124;&#124;&#124;', computerChoose,result);
+        "><img class="img" src="Stump.png" alt="Stump"></button>
+
+        <h3 id="userMove"></h3>
+        <h3 id="computerMove"></h3>
+        <h3 id="finalResult"></h3>
+        <h3 id="score"></h3>
+
+        <button class="reset-btn" onclick="
+        localStorage.clear();
+        reset();
+        "><img class="img1" src="reset2.png" alt="reset"></button>
+
+    </div>
+
+    <script src="Cricket.js"></script>
+    
+</body>
+</html>
